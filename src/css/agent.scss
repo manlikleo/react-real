@@ -64,7 +64,7 @@
         display: flex;
         justify-content: space-between;
         width: 95%;
-        margin-bottom: 6rem;
+        margin-bottom: 3rem;
     }
 
     &__addheader{
@@ -91,6 +91,9 @@
         color: white;
         font-weight: 600;
         font-size: 1rem;
+    }
+    &__header{
+        margin-bottom: 1rem;
     }
 
 

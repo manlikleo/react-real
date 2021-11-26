@@ -8,6 +8,10 @@
           align-items: unset;
 }
 
+.property__header {
+  margin-bottom: 2rem;
+}
+
 .property__agencytitle {
   font-size: 2rem;
   font-weight: 800;
@@ -33,9 +37,11 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 2.5rem;
 }
 
 .property__container {
+  padding: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,7 +50,7 @@
       -ms-flex-direction: column;
           flex-direction: column;
   width: 40%;
-  height: 392px;
+  height: 385px;
   background: #FFF;
   margin: 1rem;
   -webkit-box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
@@ -54,6 +60,86 @@
 .property__container:hover {
   -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
           box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.property__imgcon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.property__img {
+  width: 120px;
+  height: 120px;
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -ms-border-radius: 100%;
+  -o-border-radius: 100%;
+}
+
+.property__conheader {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 95%;
+}
+
+.property__addressheader {
+  padding: 0.8rem;
+  background: red;
+  color: white;
+  width: 169px;
+}
+
+.property__address {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.property__listheader {
+  padding: 0.5rem;
+  background: red;
+  color: white;
+  width: 125px;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.property__listinfo {
+  text-align: center;
+  font-weight: 600;
+}
+
+.property__pagination {
+  width: 10%;
+  padding: 0.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  text-align: center;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  background: black;
+  color: #FFF;
+  font-size: 1rem;
 }
 
 .hide {

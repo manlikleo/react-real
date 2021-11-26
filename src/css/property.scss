@@ -7,6 +7,10 @@
     height: 80%;
     align-items: unset;
 
+    &__header{
+        margin-bottom: 2rem;
+    }
+
     &__agencytitle{
         font-size: 2rem;
         font-weight: 800;
@@ -25,13 +29,15 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: 2.5rem;
     }
 
     &__container{
+        padding: 1rem;
         display: flex;
         flex-direction: column;
         width: 40%;
-        height: 392px;
+        height: 385px;
         background: #FFF;
         margin: 1rem;
         box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
@@ -41,8 +47,71 @@
         }
     }
 
+    &__imgcon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__img{
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        -webkit-border-radius: 100%;
+        -moz-border-radius: 100%;
+        -ms-border-radius: 100%;
+        -o-border-radius: 100%;
+    }
+
+    &__conheader{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 95%;
+    }
+
+
+    &__addressheader{
+        padding: 0.8rem;
+        background: red;
+        color: white;
+        width: 169px;
+    }
+    &__address{
+        font-size: 1.1rem;
+        font-weight: 600;
+    }
+
+    &__listheader{
+            padding: 0.5rem;
+            background: red;
+            color: white;
+            width: 125px;
+            margin-bottom: 1rem;
+            text-align: center;
+    }; 
     
-    
+    &__listinfo{
+        text-align: center;
+        font-weight: 600;
+    }
+
+    &__pagination{
+    width: 10%;
+    padding: 0.5rem;
+    display: flex;
+    align-self: flex-end;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: none;
+    background: black;
+    color: #FFF;
+    font-size: 1rem;
+
+    }
+
+
 
 }
 

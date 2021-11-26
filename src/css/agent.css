@@ -86,7 +86,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 95%;
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 
 .agent__addheader {
@@ -118,6 +118,10 @@
   color: white;
   font-weight: 600;
   font-size: 1rem;
+}
+
+.agent__header {
+  margin-bottom: 1rem;
 }
 
 .hide {
