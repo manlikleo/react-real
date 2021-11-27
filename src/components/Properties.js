@@ -54,7 +54,7 @@ export default function Properties() {
                                     </div>
                                     <div className="property__addresscon">
                                             <h3 className="property__addressheader">Property Location:</h3>
-                                            <p className="property__address"><span>{property.address.houseNumber}, {property.address.address1}, {property.address.locality},<br/>{property.address.town}, {property.address.town},<br/>{property.address.postcode}, Uk. </span></p>
+                                            <p className="property__address"><span>{property.address.houseNumber}, {property.address.address1}, {property.address.locality},<br/>{property.address.town}, {property.address.county},<br/>{property.address.postcode}, Uk. </span></p>
                                     </div>
                                 </div>
 

@@ -3,23 +3,56 @@
 
 .search{
     z-index: 3;
-    width: auto;
-    margin-top: 2rem;
-    height: 51vh;
+    
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    text-align: center;
+
+    @include mobile{
+        width: 100%;
+        height: 60vh;
+        margin: 0;
+    }
+    @include tablet{
+        width: auto;
+        height: 51vh;
+        margin-top: 2rem;
+    }
+
 
     &__title{
-        font-size: 4rem;
+      
         color: white;
-        margin: 2rem;
+        margin: 2rem 0;
+
+        @include mobile{
+            font-size: 2.7rem;
+        }
+        @include tablet{
+            font-size: 3rem;
+        }
+        @include laptop{
+            font-size: 4rem;
+        }
+        @include laptop_W{
+            font-size: 8rem;
+        }
     }
     &__subtitle{
-        font-size: 1.5rem;
         color: #fff;
         text-align: center;
+
+        @include mobile{
+            font-size: 1.2rem;
+        }
+        @include tablet{
+            font-size: 1.5rem;
+        }
+        @include laptop_W{
+            font-size: 3rem;
+        }
     }
     &__wrapper{
         position: relative;
@@ -34,64 +67,153 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        @include mobile{
+            flex-direction: column;
+        }
+        @include tablet{
+            flex-direction: row;
+        }
     }
 
     &__input{
-
         background: transparent;
-  
         border: 2px solid red;
         border-radius: 8px;
         padding: 13px;
         height: 45px;
-        width: 30%;
         color: #fff;
         font-size: 1rem;
+        @include mobile{
+            width: 100%;
+            margin: 1rem 0;
+        }
+        @include tablet{
+            width: 49%;
+            margin: unset;
+        }
+        @include laptop{
+            width: 36%;
+        }
+        @include laptop_L{
+            width: 30%;
+        }
+        @include laptop_W{
+            height: 90px;
+            font-size: 2rem;
 
+        }
         &::placeholder {
             font-size: 1rem;
             color: #fff;
+            @include laptop_W{
+                font-size: 2rem;
+            }
         }
     }
 
     &__button{
         height: 45px;
-        width: 15%;
-        margin-left: 40px;
         border-radius: 9px;
         background: red;
         color: white;
         border: none;
+        
+        @include mobile{
+            margin-left: 0;
+            width: 100%;
+        }
+        @include tablet{
+            margin-left: 40px;
+            width: 23%;
+        }
+        @include laptop{
+            width: 15%;
+        }
+        @include laptop_W{
+            height: 90px;
+        }
     }
 
     &__content{
-        margin: 2rem;
+        @include mobile{
+            margin: 0;
+        }
+        @include tablet{
+            margin: 2rem;
+        }
     }
 
     &__results{
-        display: none;
-        height: 84px;
-        width: 30%;
         background: white;
-        top: 4pc;
-        left: 21.5pc;
         position: absolute;
         border-radius: 8px;
         display: flex;
-        padding: 1rem;
+        height: auto;
         justify-content: space-between;
         align-items: center;
-        flex-direction: column;
+        // flex-direction: column;
+
+        @include mobile{
+            width: 95%;
+            padding: 0.5rem;
+            left: 0pc;
+            top: 9pc;
+        }
+        @include tablet{
+            width: 46%;
+            padding: 1rem;
+            top: 3.5pc;
+            left: 4.5pc;
+        }
+        @include laptop{
+            top: 3.5pc;
+            left: 13.5pc;
+            width: 32%;
+        }
+        @include laptop_L{
+            top: 4pc;
+            left: 21.5pc;
+            width: 30%;
+        }
+        @include laptop_W{
+            top: 7pc;
+            left: 40.5pc;
+            height: 150px;
+        }
     }
     &__agentName{
         font-size: 1rem;
+
+        @include mobile{
+            margin: 1rem 0;
+        }
+
+        @include tablet{
+            margin: 0;
+        }
+
+        @include laptop_W{
+            font-size: 2rem;
+        }
     }
     &__agentBtn{
         border: none;
         background: black;
         color: white;
-        width: 129px;
-        height: 40px;
+        
+        @include mobile{
+            width: 140px;
+            height: 50px;
+        }
+        @include tablet{
+            width: 129px;
+            height: 40px;
+        }
+        @include laptop_W{
+            width: 207px;
+            height: 88px;
+            font-size: 1.8rem;
+        }
     }
 
     &__agentInfo{
@@ -99,6 +221,14 @@
         width: 100%;
         align-items: center;
         justify-content: space-between;
+        @include mobile{
+            height: 100%;
+            flex-direction: column;
+        }
+        @include tablet{
+            height: unset;
+            flex-direction: row;
+        }
     }
     &__loader{
         width: 100%;
@@ -111,6 +241,7 @@
         text-align: center;
         font-size: 1.2rem;
         font-weight:600;
+        width: 100%;
     }
 }
 

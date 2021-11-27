@@ -1,12 +1,7 @@
 .agent {
   position: fixed;
-  top: 6pc;
-  left: 18pc;
-  width: 60%;
-  height: 70%;
   background: white;
   z-index: 5;
-  padding: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -19,6 +14,47 @@
           align-items: center;
 }
 
+@media screen and (min-width: 320px) {
+  .agent {
+    top: 1pc;
+    left: 1pc;
+    width: 84%;
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .agent {
+    top: 3pc;
+    left: 3pc;
+    width: 80%;
+    padding: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .agent {
+    top: 6pc;
+    left: 5pc;
+    width: 78%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .agent {
+    left: 18pc;
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .agent {
+    top: 41pc;
+    left: 55pc;
+    width: 34%;
+  }
+}
+
 .agent__closewrapper {
   position: absolute;
   border: none;
@@ -27,6 +63,15 @@
   width: 70px;
   right: 1pc;
   top: 0pc;
+}
+
+@media screen and (min-width: 320px) {
+  .agent__closewrapper {
+    height: 80px;
+    width: 64px;
+    right: 1pc;
+    top: 0pc;
+  }
 }
 
 .agent__img {
@@ -51,8 +96,22 @@
   width: 120px;
 }
 
+@media screen and (min-width: 320px) {
+  .agent__logoimg {
+    height: 90px;
+    width: 90px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .agent__logoimg {
+    height: 120px;
+    width: 120px;
+  }
+}
+
 .agent__header {
-  width: 95%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -62,20 +121,98 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 1rem;
-  margin-bottom: 3rem;
+}
+
+@media screen and (min-width: 320px) {
+  .agent__header {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .agent__header {
+    margin: 1rem 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .agent__header {
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    width: 95%;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .agent__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .agent__info {
+    display: block;
+  }
 }
 
 .agent__title {
-  font-size: 2.5rem;
   font-weight: 800;
+}
+
+@media screen and (min-width: 320px) {
+  .agent__title {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .agent__title {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .agent__title {
+    font-size: 2.5rem;
+  }
 }
 
 .agent__accno {
   background: black;
-  width: 160px;
   padding: 0.5rem;
   color: #FFF;
+}
+
+@media screen and (min-width: 320px) {
+  .agent__accno {
+    width: 126px;
+    font-size: .8rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .agent__accno {
+    width: 160px;
+    font-size: 1rem;
+  }
 }
 
 .agent__infocontainer {
@@ -85,18 +222,80 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 95%;
   margin-bottom: 3rem;
 }
 
+@media screen and (min-width: 320px) {
+  .agent__infocontainer {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .agent__infocontainer {
+    width: 95%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .agent__address {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .agent__address {
+    text-align: unset;
+  }
+}
+
 .agent__addheader {
-  font-size: 2rem;
   margin-bottom: 1rem;
   color: #E30814;
 }
 
-.agent__fulladdress {
-  font-size: 1.4rem;
+@media screen and (min-width: 320px) {
+  .agent__addheader {
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .agent__addheader {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .agent__addheader {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .agent__fulladdress {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .agent__fulladdress {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .agent__fulladdress {
+    font-size: 1.4rem;
+  }
 }
 
 .agent__properties {
@@ -106,12 +305,9 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-flex-item-align: start;
-      align-self: flex-start;
-  margin-left: 1rem;
+  text-align: center;
   padding: 1rem;
   width: 157px;
-  text-align: center;
   border-radius: 3px;
   border: none;
   background: red;
@@ -120,8 +316,21 @@
   font-size: 1rem;
 }
 
-.agent__header {
-  margin-bottom: 1rem;
+@media screen and (min-width: 320px) {
+  .agent__properties {
+    margin-left: 0;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .agent__properties {
+    margin-left: 1rem;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
 }
 
 .hide {

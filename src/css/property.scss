@@ -1,103 +1,225 @@
 @import "./media-query";
 
 .property{
-    top: 3.5pc;
-    left: 6.5pc;
-    width: 80%;
-    height: 80%;
+    
     align-items: unset;
+    @include mobile{
+        top: 0.5pc;
+        left: 0.5pc;
+        width: 87%;
+        height: 95%;
+        overflow: scroll;
+    }
+    @include tablet{
+        top: 3pc; 
+        left: 0.8pc;
+        width: 88%;
+        height: auto;
+    }
+
+    @include laptop{
+        width: 85%;
+        top: 7pc;
+        left: 2.5pc;
+        
+    }
+
+    @include laptop_L{
+        width: 70%;
+        left:11.5pc;
+        
+    }
+    @include laptop_W{
+        width: 40%;
+        left: 50.5pc;
+        top:37pc; 
+    }
 
     &__header{
         margin-bottom: 2rem;
     }
 
     &__agencytitle{
-        font-size: 2rem;
         font-weight: 800;
-        margin-bottom: 1rem;
+        margin: 1rem 0;
+        @include mobile{
+            font-size: 1rem;
+        }
+        @include tablet{
+            font-size: 2rem;
+        }
     }
     &__tag{
         width: 100px;
         padding: 0.6rem;
         text-align: center;
         font-weight: 700;
+        margin: 0;
     }
 
     &__propwrapper{
         width: 100%;
-        height: 60%;
         display: flex;
         align-items: center;
         justify-content: space-between;
         margin-bottom: 2.5rem;
+        @include mobile{
+            flex-direction: column;
+        }
+        @include tablet{
+            flex-direction:row;
+        }
     }
 
     &__container{
         padding: 1rem;
         display: flex;
         flex-direction: column;
-        width: 40%;
-        height: 385px;
         background: #FFF;
-        margin: 1rem;
+        height: auto;
         box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
-
+        @include mobile{
+            width: 86%;
+            margin-bottom: 2rem;
+        }
+        @include tablet{
+            margin-bottom:0;
+            width: 43%;
+        }
+        @include laptop{
+            width: 45%;
+        }
+        @include laptop_L{
+            width: 40%;
+        }
         &:hover{
             box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
         }
     }
 
     &__imgcon{
-        display: flex;
+       
         justify-content: center;
         align-items: center;
+        @include mobile{
+            display: none;
+        }
+        @include tablet{
+            display: flex;
+        }
     }
 
     &__img{
-        width: 120px;
-        height: 120px;
+        
         border-radius: 100%;
         -webkit-border-radius: 100%;
         -moz-border-radius: 100%;
         -ms-border-radius: 100%;
         -o-border-radius: 100%;
+
+        @include tablet{
+            width: 80px;
+            height: 80px;
+        }
+        @include laptop{
+            width: 100px;
+            height: 100px;
+        }
+        @include laptop_L{
+            width: 120px;
+            height: 120px;
+        }
     }
 
     &__conheader{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 95%;
+        @include mobile{
+            width: 100%;
+        }
+        @include laptop{
+            width: 95%;
+        }
+    }
+
+    &__addresscon{
+        @include mobile{
+            display: flex;
+            flex-direction: column;
+            align-self: flex-start;
+        }
+        @include tablet{
+            display: block;
+        }
     }
 
 
     &__addressheader{
-        padding: 0.8rem;
         background: red;
         color: white;
-        width: 169px;
+        @include mobile{
+            font-size: .8rem;
+            margin: 0.5rem 0;
+            padding: 0.6rem;
+            width: 119px;
+        }
+        @include tablet{
+            margin: unset;
+            
+        }
+        @include laptop{
+            padding: 0.8rem;
+            width: 169px;
+            font-size: 1rem;
+        }
     }
     &__address{
-        font-size: 1.1rem;
         font-weight: 600;
+        @include mobile{
+            font-size: 0.8rem;
+        }
+
+        @include laptop{
+            font-size: 1rem;
+        }
+        @include laptop_L{
+            font-size: 1.1rem;
+        }
     }
 
     &__listheader{
-            padding: 0.5rem;
             background: red;
             color: white;
-            width: 125px;
-            margin-bottom: 1rem;
             text-align: center;
+            @include mobile{
+                padding: 0.3rem;
+                font-size: 0.7rem;
+                width: 95px;
+                margin-bottom: 0;
+            }
+            @include tablet{
+                margin-bottom: 1rem;
+                width: 125px;
+            }
+            @include laptop{
+                padding: 0.5rem;
+            }
     }; 
     
     &__listinfo{
         text-align: center;
         font-weight: 600;
+        @include mobile{
+            margin: 0.5rem;
+        }
+        @include tablet{
+            margin: unset;
+        }
     }
 
     &__pagination{
-    width: 10%;
+   
     padding: 0.5rem;
     display: flex;
     align-self: flex-end;
@@ -108,6 +230,16 @@
     background: black;
     color: #FFF;
     font-size: 1rem;
+
+    @include mobile{
+        width: 37%;
+    } 
+    @include tablet{
+        width: 15%;
+    }
+    @include laptop{
+        width: 10%;
+    }
 
     }
 

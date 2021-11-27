@@ -3,33 +3,73 @@
 
 
 .home{
-    padding: 2rem;
     height: 100vh;
     display: flex;
     background : url(../Coding_test/pagebg.jpg) no-repeat center center;
     background-size: cover;
     flex-direction: column;
 
+    @include mobile{
+        padding: 1rem;
+    }
+
+    @include tablet{
+        padding: 2rem;
+    }
+
 
     &__navbar{
     z-index: 3;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    height: 10vh;
+   
     width: 100%;
+    
+    @include mobile{
+        justify-content: center;
+        height: 12vh;
+    }
+
+    @include tablet{
+        justify-content: space-between;
+        height: 10vh;
+    }
     }
 
     &__logos{
         display: flex;
-        width: 15%;
         align-items: center;
         justify-content: space-between;
         text-decoration: none;
+
+        @include mobile{
+            width: 65%;
+        }
+        @include tablet{
+            width: 25%;
+        }
+        @include laptop{
+            width: 21%;
+        }
+        @include laptop_L{
+            width: 15%;
+        }
+        @include laptop_W{
+            width: 11%;
+        }
     }
 
     &__logcon{
-        width:84px;
+       
+        @include mobile{
+            width: 60px;
+        }
+        @include laptop{
+            width:84px;
+        }
+        @include laptop_W{
+            width: 140px;
+        }
 
     }
     &__logo{
@@ -40,20 +80,41 @@
         color: white;
         font-size: 2rem;
         font-weight: 700;
+
+        @include laptop_W{
+            font-size: 2rem;
+        }
     }
 
     &__navitems{
         width: 28%;
-        display: flex;
         justify-content: space-around;
-        align-items: center
+        align-items: center;
+
+        @include mobile{
+            display: none;
+        }
+        @include tablet{
+            display: flex;
+        }
     }
 
     &__navitem{
         text-decoration: none;
         color: white;
-        font-size: 1.4rem;
         font-weight: 500;
+
+        @include tablet{
+            font-size: 1rem;
+        }
+
+        @include laptop{
+            font-size: 1.4rem;
+        }
+
+        @include laptop_W{
+            font-size: 2rem;
+        }
     }
 
 
