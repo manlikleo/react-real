@@ -13,7 +13,7 @@ export default function Agent() {
     const {agentWin} = useContext(FilterContext); 
     const [agentTab,SetAgentTab,inputData,openProp] = agentWin;
 
- 
+    // this function close the agent tab 
     const closeAgent = () => {
         SetAgentTab(false)
     }

@@ -17,6 +17,7 @@ export default function Properties() {
         SetPropTab(false);
     }
     
+    // this function calculate the levy charged by the agency usinfg the board status and amount by returrning the levy
     const calcCharge =(stat,amount)=>{
         let levy;
 
